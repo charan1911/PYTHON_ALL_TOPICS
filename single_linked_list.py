@@ -19,26 +19,21 @@ class sll():
 
 l=sll('WELCOME TO THE SINGLE LINKED LIST...')
 
-'''
+
 n1=node(10)
-l.head=n1
 n2=node(20)
+n3=node(30)
+n4=node(40)
+
+l.head=n1
 n1.next=n2
-n3=node(30)
-#n2.next=n3
-n4=node(40)
-n2.next=n4
-'''
-
-n1=node(10)
-n2=node(20)
-n3=node(30)
-n4=node(40)
-
-l.head=n1
-n1.next=n4
-n4.next=n2
+n3.next=n4
 n2.next=n3
-
+ 
 l.display()
+i=input()
+if i=="n2":
+   n2.next=n4
+l.display()
+
 
